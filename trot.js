@@ -160,7 +160,7 @@ program
       }
 
 
-      //build strings for directory and file outputs
+      //build strings for directory and file outputS
       if (this.folder) {
         dir += this.folder + '/'
         cssFilename = dir + this.componentName + ".css"
