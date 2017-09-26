@@ -25,9 +25,11 @@ class [comp] extends Component {
         }
 
         return (
-            <div [create-css-class]>
-                <h1>[comp]</h1>
-            </div>
+            <MuiThemeProvider>
+                <div [create-css-class]>
+                    <h1>[comp]</h1>
+                </div>
+            </MuiThemProvider>
         )
     }
 }
