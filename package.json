@@ -1,0 +1,63 @@
+{
+  "_from": "trot",
+  "_id": "trot@1.1.4",
+  "_inBundle": false,
+  "_integrity": "sha1-5wu8/5H+4qhZ8ruhUdzdl6tUxYA=",
+  "_location": "/trot",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "trot",
+    "name": "trot",
+    "escapedName": "trot",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/trot/-/trot-1.1.4.tgz",
+  "_shasum": "e70bbcff91fee2a859f2bba151dcdd97ab54c580",
+  "_spec": "trot",
+  "_where": "/Users/jxh0033/Dropbox/OrangeMethod/my-goals/falcon/jay/Daily Assignments/91317/test-react/src",
+  "author": {
+    "name": "suzanne-atkinson"
+  },
+  "bin": {
+    "trot": "./trot.js"
+  },
+  "bugs": {
+    "url": "https://github.com/AdventureBear/trot/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "deprecated": false,
+  "description": "command line helpers to generate react files and components",
+  "devDependencies": {},
+  "directories": {
+    "test": "test"
+  },
+  "homepage": "https://github.com/AdventureBear/trot#readme",
+  "keywords": [
+    "cli",
+    "components",
+    "generator",
+    "react"
+  ],
+  "license": "ISC",
+  "main": "app.js",
+  "name": "trot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdventureBear/trot.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "trot": "node trot.js"
+  },
+  "version": "1.1.4"
+}
