@@ -150,7 +150,7 @@ program
       //Import CSS, create CSS from Template and add className to Div of component file
       if (this.cssFile==='y' || this.cssFile==='Y') {
         result = result.replace(/\[import-css-file\]/g, ("import \'.\/" + this.componentName + ".css\'" ))
-        result = result.replace(/\[create-css-class\]/g, ("className=\'component-" + this.componentName.toLowerCase() + "\' + ' ' + id=\'component-" + this.componentName.toLowerCase() + "\'" ))
+        result = result.replace(/\[create-css-class\]/g, ("className=\'component-" + this.componentName.toLowerCase() + "\'" + ' ' + "id=\'component-" + this.componentName.toLowerCase() + "\'"))
         cssResult =cssTemplate.replace (/\[comp\]/g, this.componentName.toLowerCase())
       }  else {
         //remove CSS references from template
