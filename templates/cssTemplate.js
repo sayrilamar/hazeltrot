@@ -2,10 +2,10 @@
 
 var cssTemplate =
 `.component-[comp] {
-    background-color: #fdefde;
+    background-color: #CAF3FD;
     color: #321321;
-    margin: 3;
-    padding: 3;
+    margin: 3px;
+    padding: 3px;
 }`
 
 module.exports = cssTemplate
