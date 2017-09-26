@@ -5,6 +5,8 @@ var ES6 =
 import PropTypes from 'prop-types';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import 'react-bootstrap';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 
 [import-css-file]
 
