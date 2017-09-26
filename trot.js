@@ -59,7 +59,7 @@ let nest = (parent, children, options) => {
       //set Regex's to search for insertion points
       reImport = /import/gi
       reRequire = /require/gi
-      reDiv = /(<div className="App">)/gi || /(<div id=${newComponent}>)/gi
+      reDiv = /(<div className="App">)/gi
 
       rl.on('line', (input) => {
         //check if include has been set for child component
