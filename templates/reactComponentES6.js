@@ -3,7 +3,9 @@
 var ES6 = 
 `import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import 'react-bootstrap';
+
 [import-css-file]
 
 class [comp] extends Component {
