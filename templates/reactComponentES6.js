@@ -29,7 +29,7 @@ class [comp] extends Component {
                 <div [create-css-class]>
                     <h1>[comp]</h1>
                 </div>
-            </MuiThemProvider>
+            </MuiThemeProvider>
         )
     }
 }
