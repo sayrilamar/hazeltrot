@@ -8,6 +8,7 @@ var cssTemplate =
     padding: 3px;
     border-style: dashed;
     border-color: gainsboro;
+    flex-flow: wrap;
 }`
 
 module.exports = cssTemplate
