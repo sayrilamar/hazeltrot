@@ -59,7 +59,7 @@ let nest = (parent, children, options) => {
       //set Regex's to search for insertion points
       reImport = /import/gi
       reRequire = /require/gi
-      reDiv = /(<div className="App">)/gi
+      reDiv = /(<div className="App">)/gi || /(<div id=>)/gi
 
       rl.on('line', (input) => {
         //check if include has been set for child component
@@ -72,12 +72,12 @@ let nest = (parent, children, options) => {
 
           if (input.match(reImport)){
             children.map((child)=>{
-              newComponent += "import " + child  + " from \'" + child + "\'\n"
+              newComponent += "import " + child  + " from \'./" + child + "\'\n"
             })
 
           } else if (input.match(reRequire)){
             children.map((child)=> {
-              newComponent += "var " + child + " = require(\'" + child + "\') " + "\n"
+              newComponent += "var " + child + " = require(\'./" + child + "\') " + "\n"
             })
             }
 
@@ -150,7 +150,7 @@ program
       //Import CSS, create CSS from Template and add className to Div of component file
       if (this.cssFile==='y' || this.cssFile==='Y') {
         result = result.replace(/\[import-css-file\]/g, ("import \'.\/" + this.componentName + ".css\'" ))
-        result = result.replace(/\[create-css-class\]/g, ("className=\'component-" + this.componentName.toLowerCase() + "\'"))
+        result = result.replace(/\[create-css-class\]/g, ("id=\'component-" + this.componentName.toLowerCase() + "\'" + ' ' + "className=\'component-" + this.componentName.toLowerCase() + "\'"))
         cssResult =cssTemplate.replace (/\[comp\]/g, this.componentName.toLowerCase())
       }  else {
         //remove CSS references from template
