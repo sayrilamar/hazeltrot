@@ -27,7 +27,7 @@ class [comp] extends Component {
 
         return (
             <MuiThemeProvider>
-                <div [create-css-class]>
+                <div id=[comp] [create-css-class]>
                     <h1>[comp]</h1>
                 </div>
             </MuiThemeProvider>
