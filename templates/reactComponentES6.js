@@ -2,10 +2,15 @@
 
 var ES6 = 
 `import React, { Component } from 'react';
+// eslint-disable-next-line
 import PropTypes from 'prop-types';
+// eslint-disable-next-line
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+// eslint-disable-next-line
 import 'react-bootstrap';
+// eslint-disable-next-line
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+// eslint-disable-next-line
 import 'ux-react-styleguide';
 
 
@@ -20,7 +25,7 @@ class [comp] extends Component {
     }
 
     render(props){
-
+        // eslint-disable-next-line
         const defaultProps = {
 
         }
@@ -34,7 +39,7 @@ class [comp] extends Component {
         )
     }
 }
-
+// eslint-disable-next-line
 [comp].propTypes = {
 
 };
