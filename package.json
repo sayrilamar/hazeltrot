@@ -33,7 +33,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "commander": "^4.0.1"
+    "commander": "^6.0.0"
   },
   "deprecated": false,
   "description": "command line helpers to generate react files and components",
